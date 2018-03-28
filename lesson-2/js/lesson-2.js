@@ -56,25 +56,6 @@ let budget,
 
  console.log(time);
  	
- 
- // Цикл с предусловием
- /*while (i < 5) {
- 	let a = prompt('Какой тип товаров будем продавать?', '');
- 	mainList.typeProduct[i] = a;
- 	i++;
- }*/
-
- // цикл с постусловием
- /*	let i = 0;
- do {
- 	let a = prompt('Какой тип товаров будем продавать?', '');
- 	mainList.typeProduct[i] = a;
- 	i++
- }
- while (i < 4) {
- 	let a = prompt('Какой тип товаров будем продавать?', '');
- 	mainList.typeProduct[i] = a;
- }*/
 
  alert(mainList['буджет на 1 день:D']);
  alert(mainList.open);

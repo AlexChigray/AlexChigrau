@@ -128,9 +128,15 @@ let budget,
 		 }
  };
 
-	for(let key in mainList) {
-		console.log('Наш магазин включает в себя : ' + key + ' - ' + mainList[key]);
-	}
+ 	console.log('магазин включает в себя : '); 
+ 	for(let key in mainList) {
+ 		console.log(key);
+ 	}
+
+ 
+
+
+	
 
 
 	

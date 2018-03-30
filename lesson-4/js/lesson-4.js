@@ -130,7 +130,7 @@ let budget,
 
  	console.log('магазин включает в себя : '); 
  	for(let key in mainList) {
- 		console.log(key);
+ 		console.log(key + ';');
  	}
 
  

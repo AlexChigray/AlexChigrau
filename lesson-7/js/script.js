@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				});
 
 				// Timer
-				let deadline = '2018-04-05';
+				let deadline = '2018-04-10';
 				function getTimerRemaining(endtime) {
 					let t = Date.parse(endtime) - Date.parse(new Date()),
 									seconds = Math.floor((t / 1000) % 60),
@@ -60,10 +60,6 @@ window.addEventListener('DOMContentLoaded', () => {
 										hours.innerHTML = t.hours;
 										minutes.innerHTML = t.minutes;
 										seconds.innerHTML = t.seconds;
-
-										if (t.total <= 0) {
-											clearInterval(timeInt);
-										};
 									};
 
 
@@ -72,5 +68,30 @@ window.addEventListener('DOMContentLoaded', () => {
 				};
 
 				setClock('timer', deadline);
+// Modal
+				let more = document.querySelector('.more'),
+								overlay = document.querySelector('.overlay'),
+								close = document.querySelector('.popup-close'),
+								decritptionBtn = document.getElementsByClassName('description-btn');
 
+								more.addEventListener('click', function() {
+									this.classList.add('more-splash');
+									overlay.classList.remove('fade');
+									overlay.classList.add('rotate');
+									overlay.style.display = 'block';
+									document.body.style.overflow = 'hidden';
+								});
+								close.addEventListener('click', function() {
+									overlay.style.display = '';
+									more.classList.remove('more-splash');
+									document.body.style.overflow = '';
+								});
+
+								for (let i = 0; i < decritptionBtn.length; i++) {
+										decritptionBtn[i].addEventListener('click', function() {
+										this.classList.add('more-splash');
+										overlay.style.display = 'block';
+										document.body.style.overflow = 'hidden';
+									});
+								};
 });

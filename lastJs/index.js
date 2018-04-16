@@ -10,7 +10,7 @@ sum(2,2);
 
 describe('sum', () => {
 	it('должно возратить true', () => {
-		assert.typeOf(sum(), 'boolean');
+		assert.equal(sum(12, 5), true);
 	});
 });
 

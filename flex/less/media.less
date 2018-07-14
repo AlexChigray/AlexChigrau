@@ -1,0 +1,111 @@
+@color_text: #ca8f39;
+@media (min-width: 320px) and (max-width: 991px) {
+	.container {
+		width: 90%;
+	}
+	.title {
+		margin-bottom: 1rem;
+	}
+	.main {
+		&__top {
+			flex-direction: column;
+			&_contacts {
+				padding-right: 0;
+				flex-direction: column;
+			}
+		}
+		&__nav {
+			margin-top: 2rem;
+			&_btn {
+				display: block;
+			}
+			&_menu {
+				display: none;
+				flex-direction: column;
+				li {
+					border: 1px solid darken(@color_text, 4%);
+					&:hover {
+						background-color: darken(@color_text, 10%);
+						&::after {
+							content: '';
+							display: none;
+							}
+						}
+					}
+				}
+				.active {
+					display: block;
+
+			}
+		}
+		&__img {
+			img {
+				height: 100%;
+			}
+		}
+	}
+	.activites {
+		&__content {
+			flex-wrap: wrap;
+			align-items: center;
+			margin-top: 0;
+			&_block {
+				margin-top: 4rem;
+				img {
+					width: 50%;
+				}
+				p {
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
+	.realcounts {
+		&__content {
+			flex-direction: column;
+			align-items: center;
+			&_block {
+				margin-top: 1rem;
+			}
+		}
+	}
+	.company {
+		&__blocks {
+			flex-direction: column;
+			align-items: center;
+			&_content {
+				width: 100%;
+			}
+		} 
+	}
+	.footer {
+		&__contents {
+			flex-direction: column;
+			align-items: center;
+			&_block {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1240px) {
+	html {
+		font-size: 9px;
+	}
+	.container {
+		width: 90%;
+	}
+	.activites {
+		&__content {
+			&_block {
+				img {
+					width: 45%;
+				}
+			}
+		}
+	}
+}

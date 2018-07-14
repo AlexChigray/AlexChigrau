@@ -1,0 +1,114 @@
+@media (min-width: 320px) and (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+  .main__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__top_contacts {
+    padding-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__nav {
+    margin-top: 2rem;
+  }
+  .main__nav_btn {
+    display: block;
+  }
+  .main__nav_menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__nav_menu li {
+    border: 1px solid #bc8432;
+  }
+  .main__nav_menu li:hover {
+    background-color: #a4732c;
+  }
+  .main__nav_menu li:hover::after {
+    content: '';
+    display: none;
+  }
+  .main__nav .active {
+    display: block;
+  }
+  .main__img img {
+    height: 100%;
+  }
+  .activites__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .activites__content_block {
+    margin-top: 4rem;
+  }
+  .activites__content_block img {
+    width: 50%;
+  }
+  .activites__content_block p {
+    margin-top: 2rem;
+  }
+  .realcounts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .realcounts__content_block {
+    margin-top: 1rem;
+  }
+  .company__blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .company__blocks_content {
+    width: 100%;
+  }
+  .footer__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__contents_block p {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1240px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 90%;
+  }
+  .activites__content_block img {
+    width: 45%;
+  }
+}
